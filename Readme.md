@@ -9,7 +9,6 @@ resistor 10K | R1, R2, R3, R4
 ceramic capacitor 0.33uF 25V | C1
 ceramic capacitor 0.1uF 25V | C2
 capacitor 100uF 25V | C3, C4
------------- | -------------
 2P Screw terminal P=5.08 | J5
 3P JST-XH male P=2.54 | J1, J2, J3, J4
 4P JST-XH male P=2.54 | J6, J7
@@ -17,7 +16,6 @@ capacitor 100uF 25V | C3, C4
 2P Header socket P=2.54 | *1x for U4*
 5P Header pin P=2.54 | J6
 7P Header socket female P=2.54 | *(optionnal) 2x for Seeeduino XIAO*
------------- | -------------
 Seeduino XIAO | U1
 Voltage regulator L7805CP | U2
 SilentStepStick TMC220X | U3, U4
@@ -25,22 +23,29 @@ Jumper P=2.54 | *2x for J6*
 
 ## Configure the MCU
 * Install bossac (version ≥1.8)
-```sudo apt install libreadline-dev libwxgtk3.0-*
+```
+sudo apt install libreadline-dev libwxgtk3.0-*
 git clone https://github.com/shumatech/BOSSA.git
 cd BOSSA
 make
-sudo cp bin/bossac /usr/local/bin```
+sudo cp bin/bossac /usr/local/bin
+```
 * Prepare the firmware
-```cd ~/klipper
-make menuconfig```
+```
+cd ~/klipper
+make menuconfig
+```
 ![Menuconfig instructions](/images/flashing.jpg)
 ```make clean
-make```
+make
+```
 * Flashing the Seeeduino XIAO
 Connect the Seeeduino XIAO to your raspberry if it's not already done.
 Get the port of the XIAO, i.e. `ls /dev/tty*`, and modify the default `/dev/ttyACM1` in the command line bellow.
 Use tweezers or short lines to short the RST pins in the diagram twice. The orange LED lights flicker on and light up. Then send in the next few seconds this command line matching your port.
-```sudo /usr/local/bin/bossac -i -d -p /dev/ttyACM1 -e -w -v -R --offset=0x2000 out/klipper.bin```
+```
+sudo /usr/local/bin/bossac -i -d -p /dev/ttyACM1 -e -w -v -R --offset=0x2000 out/klipper.bin
+```
 
 More informations on how to reset for flashing: https://wiki.seeedstudio.com/Seeeduino-XIAO/#enter-bootloader-mode
 
