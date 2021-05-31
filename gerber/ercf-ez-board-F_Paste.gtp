@@ -1,0 +1,25 @@
+G04 #@! TF.GenerationSoftware,KiCad,Pcbnew,(5.1.9)-1*
+G04 #@! TF.CreationDate,2021-05-31T18:46:20+02:00*
+G04 #@! TF.ProjectId,xiao-simple,7869616f-2d73-4696-9d70-6c652e6b6963,rev?*
+G04 #@! TF.SameCoordinates,Original*
+G04 #@! TF.FileFunction,Paste,Top*
+G04 #@! TF.FilePolarity,Positive*
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad (PCBNEW (5.1.9)-1) date 2021-05-31 18:46:20*
+%MOMM*%
+%LPD*%
+G01*
+G04 APERTURE LIST*
+%ADD10C,1.143000*%
+%ADD11O,2.032000X1.016000*%
+G04 APERTURE END LIST*
+D10*
+X83133633Y-132026597D03*
+X83133633Y-134566597D03*
+X80593633Y-132026597D03*
+X80593633Y-134566597D03*
+D11*
+X97597820Y-132015400D03*
+X97597820Y-134565400D03*
+M02*

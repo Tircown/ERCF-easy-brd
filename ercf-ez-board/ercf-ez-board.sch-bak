@@ -1,0 +1,907 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "ERCF EZ BOARD"
+Date "29/05/2021"
+Rev "v1.0"
+Comp "The ERCF fanclub"
+Comment1 "by Tircown"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ercf-ez-board:SeeeduinoXIAO U1
+U 1 1 60ACCCFB
+P 2350 1800
+F 0 "U1" H 2325 861 50  0000 C CNN
+F 1 "SeeeduinoXIAO" H 2325 770 50  0000 C CNN
+F 2 "ercf-ez-board:SeeeduinoXIAO-MODULE14P" H 2000 2000 50  0001 C CNN
+F 3 "" H 2000 2000 50  0001 C CNN
+	1    2350 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:L7805 U2
+U 1 1 60ACD9D6
+P 6150 1650
+F 0 "U2" H 6150 1892 50  0000 C CNN
+F 1 "L7805" H 6150 1801 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 6175 1500 50  0001 L CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 6150 1600 50  0001 C CNN
+	1    6150 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:C C2
+U 1 1 60ACE0D6
+P 6500 2100
+F 0 "C2" H 6678 2146 50  0000 L CNN
+F 1 "0.1uF" H 6678 2055 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 6500 2100 50  0001 C CNN
+F 3 "~" H 6500 2100 50  0001 C CNN
+	1    6500 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:C C1
+U 1 1 60ACF889
+P 5800 2100
+F 0 "C1" H 5500 2150 50  0000 L CNN
+F 1 "0.33uF" H 5350 2050 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 5800 2100 50  0001 C CNN
+F 3 "~" H 5800 2100 50  0001 C CNN
+	1    5800 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 1650 6500 1650
+Wire Wire Line
+	6500 1650 6500 1850
+Wire Wire Line
+	5850 1650 5800 1650
+Wire Wire Line
+	5800 1650 5800 1850
+Wire Wire Line
+	6150 1950 6150 2350
+Wire Wire Line
+	6150 2350 5800 2350
+Wire Wire Line
+	6150 2350 6500 2350
+Connection ~ 6150 2350
+$Comp
+L power:GND #PWR08
+U 1 1 60AD0930
+P 6150 2500
+F 0 "#PWR08" H 6150 2250 50  0001 C CNN
+F 1 "GND" H 6155 2327 50  0000 C CNN
+F 2 "" H 6150 2500 50  0001 C CNN
+F 3 "" H 6150 2500 50  0001 C CNN
+	1    6150 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 2350 6150 2450
+$Comp
+L Connector:Conn_01x04_Male J7
+U 1 1 60AD3781
+P 9750 1950
+F 0 "J7" H 9722 1832 50  0000 R CNN
+F 1 "Conn_01x04_Male" H 9722 1923 50  0000 R CNN
+F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 9750 1950 50  0001 C CNN
+F 3 "~" H 9750 1950 50  0001 C CNN
+	1    9750 1950
+	-1   0    0    1   
+$EndComp
+NoConn ~ 2250 2650
+NoConn ~ 2450 2650
+NoConn ~ 2150 900 
+NoConn ~ 2300 900 
+NoConn ~ 2450 900 
+NoConn ~ 2600 900 
+Text GLabel 10000 1550 2    50   Input ~ 0
+G-EN
+$Comp
+L Device:R R3
+U 1 1 60AD705E
+P 10150 1700
+F 0 "R3" V 10050 1700 50  0000 C CNN
+F 1 "10k" V 10150 1700 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 10080 1700 50  0001 C CNN
+F 3 "~" H 10150 1700 50  0001 C CNN
+	1    10150 1700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9550 1300 9600 1300
+Wire Wire Line
+	9600 1300 9600 1150
+$Comp
+L pspice:C C3
+U 1 1 60AD97CC
+P 10100 1250
+F 0 "C3" V 10400 1250 50  0000 C CNN
+F 1 "100uF" V 10300 1250 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm" H 10100 1250 50  0001 C CNN
+F 3 "~" H 10100 1250 50  0001 C CNN
+	1    10100 1250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9850 1150 9850 1250
+Wire Wire Line
+	9850 1400 9550 1400
+Wire Wire Line
+	9850 1250 9850 1400
+Connection ~ 9850 1250
+$Comp
+L power:GND #PWR025
+U 1 1 60ADC446
+P 10350 1250
+F 0 "#PWR025" H 10350 1000 50  0001 C CNN
+F 1 "GND" H 10355 1077 50  0000 C CNN
+F 2 "" H 10350 1250 50  0001 C CNN
+F 3 "" H 10350 1250 50  0001 C CNN
+	1    10350 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR017
+U 1 1 60ADCE5C
+P 9650 2750
+F 0 "#PWR017" H 9650 2500 50  0001 C CNN
+F 1 "GND" H 9655 2577 50  0000 C CNN
+F 2 "" H 9650 2750 50  0001 C CNN
+F 3 "" H 9650 2750 50  0001 C CNN
+	1    9650 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR019
+U 1 1 60ADF46D
+P 9600 1150
+F 0 "#PWR019" H 9600 1000 50  0001 C CNN
+F 1 "+3V3" H 9615 1323 50  0000 C CNN
+F 2 "" H 9600 1150 50  0001 C CNN
+F 3 "" H 9600 1150 50  0001 C CNN
+	1    9600 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR023
+U 1 1 60ADFDE4
+P 10300 1700
+F 0 "#PWR023" H 10300 1550 50  0001 C CNN
+F 1 "+3V3" V 10315 1828 50  0000 L CNN
+F 2 "" H 10300 1700 50  0001 C CNN
+F 3 "" H 10300 1700 50  0001 C CNN
+	1    10300 1700
+	0    1    1    0   
+$EndComp
+Text GLabel 8150 1800 0    50   Input ~ 0
+G-STEP
+Text GLabel 8150 1700 0    50   Input ~ 0
+G-DIR
+Wire Wire Line
+	8150 2000 8050 2000
+Wire Wire Line
+	8050 2000 8050 2100
+Wire Wire Line
+	8050 2100 8150 2100
+$Comp
+L power:GND #PWR010
+U 1 1 60AE130E
+P 7950 2100
+F 0 "#PWR010" H 7950 1850 50  0001 C CNN
+F 1 "GND" V 7955 1972 50  0000 R CNN
+F 2 "" H 7950 2100 50  0001 C CNN
+F 3 "" H 7950 2100 50  0001 C CNN
+	1    7950 2100
+	0    1    1    0   
+$EndComp
+Connection ~ 8050 2100
+Wire Wire Line
+	7950 2100 8050 2100
+Text GLabel 7800 2800 3    50   Input ~ 0
+UART
+Wire Wire Line
+	7700 2600 7700 2700
+Wire Wire Line
+	7700 2700 7800 2700
+Wire Wire Line
+	7800 2600 7800 2700
+Wire Wire Line
+	7800 2700 7800 2800
+Connection ~ 7800 2700
+NoConn ~ 9550 2350
+NoConn ~ 9550 2250
+$Comp
+L power:GND #PWR013
+U 1 1 60AE524A
+P 8050 2800
+F 0 "#PWR013" H 8050 2550 50  0001 C CNN
+F 1 "GND" H 8055 2627 50  0000 C CNN
+F 2 "" H 8050 2800 50  0001 C CNN
+F 3 "" H 8050 2800 50  0001 C CNN
+	1    8050 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 2500 8050 2500
+$Comp
+L ercf-ez-board:TMC2209_SILENTSTEPSTICK U3
+U 1 1 60AD171B
+P 8850 1900
+F 0 "U3" H 8850 2767 50  0000 C CNN
+F 1 "TMC2209_SILENTSTEPSTICK" H 8850 2676 50  0000 C CNN
+F 2 "ercf-ez-board:MODULE_TMC2209_SILENTSTEPSTICK" H 8850 1900 50  0001 L BNN
+F 3 "" H 8850 1900 50  0001 L BNN
+F 4 "v11" H 8850 1900 50  0001 L BNN "PARTREV"
+F 5 "Trinamic" H 8850 1900 50  0001 L BNN "MANUFACTURER"
+F 6 "N/A" H 8850 1900 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
+F 7 "Manufacturer Recommendations" H 8850 1900 50  0001 L BNN "STANDARD"
+	1    8850 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 60AE3D4D
+P 8050 2650
+F 0 "R1" H 8120 2696 50  0000 L CNN
+F 1 "10k" V 8050 2581 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7980 2650 50  0001 C CNN
+F 3 "~" H 8050 2650 50  0001 C CNN
+	1    8050 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male J8
+U 1 1 60AF1605
+P 9750 4600
+F 0 "J8" H 9722 4482 50  0000 R CNN
+F 1 "Conn_01x04_Male" H 9722 4573 50  0000 R CNN
+F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 9750 4600 50  0001 C CNN
+F 3 "~" H 9750 4600 50  0001 C CNN
+	1    9750 4600
+	-1   0    0    1   
+$EndComp
+Text GLabel 10000 4200 2    50   Input ~ 0
+S-EN
+$Comp
+L Device:R R4
+U 1 1 60AF160C
+P 10150 4350
+F 0 "R4" V 10050 4350 50  0000 C CNN
+F 1 "10k" V 10150 4350 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 10080 4350 50  0001 C CNN
+F 3 "~" H 10150 4350 50  0001 C CNN
+	1    10150 4350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9550 3950 9600 3950
+Wire Wire Line
+	9600 3950 9600 3800
+$Comp
+L pspice:C C4
+U 1 1 60AF1619
+P 10100 3900
+F 0 "C4" V 10400 3900 50  0000 C CNN
+F 1 "100uF" V 10300 3900 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm" H 10100 3900 50  0001 C CNN
+F 3 "~" H 10100 3900 50  0001 C CNN
+	1    10100 3900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9850 3800 9850 3900
+Wire Wire Line
+	9850 4050 9550 4050
+Wire Wire Line
+	9850 3900 9850 4050
+Connection ~ 9850 3900
+$Comp
+L power:GND #PWR026
+U 1 1 60AF1624
+P 10350 3900
+F 0 "#PWR026" H 10350 3650 50  0001 C CNN
+F 1 "GND" H 10355 3727 50  0000 C CNN
+F 2 "" H 10350 3900 50  0001 C CNN
+F 3 "" H 10350 3900 50  0001 C CNN
+	1    10350 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR018
+U 1 1 60AF162A
+P 9650 5400
+F 0 "#PWR018" H 9650 5150 50  0001 C CNN
+F 1 "GND" H 9655 5227 50  0000 C CNN
+F 2 "" H 9650 5400 50  0001 C CNN
+F 3 "" H 9650 5400 50  0001 C CNN
+	1    9650 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR020
+U 1 1 60AF163D
+P 9600 3800
+F 0 "#PWR020" H 9600 3650 50  0001 C CNN
+F 1 "+3V3" H 9615 3973 50  0000 C CNN
+F 2 "" H 9600 3800 50  0001 C CNN
+F 3 "" H 9600 3800 50  0001 C CNN
+	1    9600 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR024
+U 1 1 60AF1643
+P 10300 4350
+F 0 "#PWR024" H 10300 4200 50  0001 C CNN
+F 1 "+3V3" V 10315 4478 50  0000 L CNN
+F 2 "" H 10300 4350 50  0001 C CNN
+F 3 "" H 10300 4350 50  0001 C CNN
+	1    10300 4350
+	0    1    1    0   
+$EndComp
+Text GLabel 8150 4450 0    50   Input ~ 0
+S-STEP
+Text GLabel 8150 4350 0    50   Input ~ 0
+S-DIR
+$Comp
+L power:GND #PWR012
+U 1 1 60AF164F
+P 7950 4750
+F 0 "#PWR012" H 7950 4500 50  0001 C CNN
+F 1 "GND" V 7955 4622 50  0000 R CNN
+F 2 "" H 7950 4750 50  0001 C CNN
+F 3 "" H 7950 4750 50  0001 C CNN
+	1    7950 4750
+	0    1    1    0   
+$EndComp
+NoConn ~ 9550 5000
+$Comp
+L power:GND #PWR014
+U 1 1 60AF165F
+P 8050 5450
+F 0 "#PWR014" H 8050 5200 50  0001 C CNN
+F 1 "GND" H 8055 5277 50  0000 C CNN
+F 2 "" H 8050 5450 50  0001 C CNN
+F 3 "" H 8050 5450 50  0001 C CNN
+	1    8050 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 5150 8050 5150
+$Comp
+L ercf-ez-board:TMC2209_SILENTSTEPSTICK U4
+U 1 1 60AF166A
+P 8850 4550
+F 0 "U4" H 8850 5417 50  0000 C CNN
+F 1 "TMC2209_SILENTSTEPSTICK" H 8850 5326 50  0000 C CNN
+F 2 "ercf-ez-board:MODULE_TMC2209_SILENTSTEPSTICK" H 8850 4550 50  0001 L BNN
+F 3 "" H 8850 4550 50  0001 L BNN
+F 4 "v11" H 8850 4550 50  0001 L BNN "PARTREV"
+F 5 "Trinamic" H 8850 4550 50  0001 L BNN "MANUFACTURER"
+F 6 "N/A" H 8850 4550 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
+F 7 "Manufacturer Recommendations" H 8850 4550 50  0001 L BNN "STANDARD"
+	1    8850 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 60AF1670
+P 8050 5300
+F 0 "R2" H 8120 5346 50  0000 L CNN
+F 1 "10k" V 8050 5231 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7980 5300 50  0001 C CNN
+F 3 "~" H 8050 5300 50  0001 C CNN
+	1    8050 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 4750 8150 4750
+$Comp
+L power:+3V3 #PWR011
+U 1 1 60AF22F2
+P 7950 4650
+F 0 "#PWR011" H 7950 4500 50  0001 C CNN
+F 1 "+3V3" V 7965 4778 50  0000 L CNN
+F 2 "" H 7950 4650 50  0001 C CNN
+F 3 "" H 7950 4650 50  0001 C CNN
+	1    7950 4650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7950 4650 8150 4650
+$Comp
+L Connector:Conn_01x03_Male J1
+U 1 1 60B2AA5A
+P 5150 4150
+F 0 "J1" H 5200 4500 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 5200 4400 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical" H 5150 4150 50  0001 C CNN
+F 3 "~" H 5150 4150 50  0001 C CNN
+	1    5150 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J5
+U 1 1 60B2FB7C
+P 5500 1150
+F 0 "J5" V 5750 1150 50  0000 R CNN
+F 1 "Screw_Terminal_01x02" V 5650 1500 50  0000 R CNN
+F 2 "xiao-simple:TerminalBlock_bornier-2_P5.08mm_2" H 5500 1150 50  0001 C CNN
+F 3 "~" H 5500 1150 50  0001 C CNN
+	1    5500 1150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5800 1650 5600 1650
+Wire Wire Line
+	5600 1650 5600 1350
+Connection ~ 5800 1650
+Wire Wire Line
+	5600 1650 5600 1700
+Connection ~ 5600 1650
+Text GLabel 5800 4050 2    50   Input ~ 0
+SERVO
+$Comp
+L power:+5V #PWR09
+U 1 1 60B378CB
+P 6500 1650
+F 0 "#PWR09" H 6500 1500 50  0001 C CNN
+F 1 "+5V" V 6515 1778 50  0000 L CNN
+F 2 "" H 6500 1650 50  0001 C CNN
+F 3 "" H 6500 1650 50  0001 C CNN
+	1    6500 1650
+	0    1    1    0   
+$EndComp
+Connection ~ 6500 1650
+$Comp
+L power:VDC #PWR05
+U 1 1 60B385FD
+P 5600 1700
+F 0 "#PWR05" H 5600 1600 50  0001 C CNN
+F 1 "VDC" H 5615 1873 50  0000 C CNN
+F 2 "" H 5600 1700 50  0001 C CNN
+F 3 "" H 5600 1700 50  0001 C CNN
+	1    5600 1700
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VDC #PWR021
+U 1 1 60B3A934
+P 9850 1150
+F 0 "#PWR021" H 9850 1050 50  0001 C CNN
+F 1 "VDC" H 9865 1323 50  0000 C CNN
+F 2 "" H 9850 1150 50  0001 C CNN
+F 3 "" H 9850 1150 50  0001 C CNN
+	1    9850 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR01
+U 1 1 60B3D854
+P 3150 1350
+F 0 "#PWR01" H 3150 1200 50  0001 C CNN
+F 1 "VCC" V 3165 1478 50  0000 L CNN
+F 2 "" H 3150 1350 50  0001 C CNN
+F 3 "" H 3150 1350 50  0001 C CNN
+	1    3150 1350
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3V3 #PWR03
+U 1 1 60B3E4C7
+P 3150 1650
+F 0 "#PWR03" H 3150 1500 50  0001 C CNN
+F 1 "+3V3" V 3165 1778 50  0000 L CNN
+F 2 "" H 3150 1650 50  0001 C CNN
+F 3 "" H 3150 1650 50  0001 C CNN
+	1    3150 1650
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 60B3F0C5
+P 3150 1500
+F 0 "#PWR02" H 3150 1250 50  0001 C CNN
+F 1 "GND" V 3155 1372 50  0000 R CNN
+F 2 "" H 3150 1500 50  0001 C CNN
+F 3 "" H 3150 1500 50  0001 C CNN
+	1    3150 1500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5500 1350 5200 1350
+Wire Wire Line
+	5200 1350 5200 2450
+Wire Wire Line
+	5200 2450 6150 2450
+Connection ~ 6150 2450
+Wire Wire Line
+	6150 2450 6150 2500
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 60B41A2C
+P 5200 1350
+F 0 "#FLG01" H 5200 1425 50  0001 C CNN
+F 1 "PWR_FLAG" V 5200 1477 50  0000 L CNN
+F 2 "" H 5200 1350 50  0001 C CNN
+F 3 "~" H 5200 1350 50  0001 C CNN
+	1    5200 1350
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5200 1350
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 60B41FCC
+P 5600 1350
+F 0 "#FLG02" H 5600 1425 50  0001 C CNN
+F 1 "PWR_FLAG" V 5600 1478 50  0000 L CNN
+F 2 "" H 5600 1350 50  0001 C CNN
+F 3 "~" H 5600 1350 50  0001 C CNN
+	1    5600 1350
+	0    1    1    0   
+$EndComp
+Connection ~ 5600 1350
+$Comp
+L Connector:Conn_01x03_Male J2
+U 1 1 60B49B4C
+P 5150 4800
+F 0 "J2" H 5200 5150 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 5200 5050 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical" H 5150 4800 50  0001 C CNN
+F 3 "~" H 5150 4800 50  0001 C CNN
+	1    5150 4800
+	1    0    0    -1  
+$EndComp
+Text GLabel 5800 4700 2    50   Input ~ 0
+ENCODER
+$Comp
+L Connector:Conn_01x03_Male J3
+U 1 1 60B5B420
+P 5150 5400
+F 0 "J3" H 5200 5750 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 5200 5650 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical" H 5150 5400 50  0001 C CNN
+F 3 "~" H 5150 5400 50  0001 C CNN
+	1    5150 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 60B5B426
+P 5800 6400
+F 0 "#PWR07" H 5800 6150 50  0001 C CNN
+F 1 "GND" V 5805 6272 50  0000 R CNN
+F 2 "" H 5800 6400 50  0001 C CNN
+F 3 "" H 5800 6400 50  0001 C CNN
+	1    5800 6400
+	0    -1   -1   0   
+$EndComp
+Text GLabel 1500 1650 0    50   Input ~ 0
+G-DIR
+Text GLabel 1500 1500 0    50   Input ~ 0
+G-STEP
+Text GLabel 1500 1350 0    50   Input ~ 0
+G-EN
+Text GLabel 1500 2250 0    50   Input ~ 0
+S-DIR
+Text GLabel 1500 2100 0    50   Input ~ 0
+S-STEP
+Text GLabel 1500 1800 0    50   Input ~ 0
+S-EN
+Text GLabel 1500 1950 0    50   Input ~ 0
+UART
+Text GLabel 3150 1950 2    50   Input ~ 0
+SERVO
+Text GLabel 3150 1800 2    50   Input ~ 0
+ENCODER
+Text GLabel 3150 2100 2    50   Input ~ 0
+EXTRA
+Text GLabel 3150 2250 2    50   Input ~ 0
+S-MIN
+$Comp
+L power:VCC #PWR04
+U 1 1 60B695DA
+P 5500 6400
+F 0 "#PWR04" H 5500 6250 50  0001 C CNN
+F 1 "VCC" V 5515 6527 50  0000 L CNN
+F 2 "" H 5500 6400 50  0001 C CNN
+F 3 "" H 5500 6400 50  0001 C CNN
+	1    5500 6400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5350 4700 5800 4700
+Wire Wire Line
+	5350 4150 5700 4150
+Wire Wire Line
+	5700 4800 5350 4800
+Wire Wire Line
+	5600 4900 5350 4900
+Wire Wire Line
+	5350 4050 5800 4050
+Wire Wire Line
+	5350 5400 5700 5400
+Wire Wire Line
+	5350 5500 5600 5500
+Wire Wire Line
+	5600 4900 5600 5500
+Connection ~ 5700 4800
+Wire Wire Line
+	5700 4800 5700 5400
+Wire Wire Line
+	5700 4150 5700 4800
+$Comp
+L Connector:Conn_01x05_Male J6
+U 1 1 60B9F41F
+P 6200 5850
+F 0 "J6" H 6200 6300 50  0000 C CNN
+F 1 "Conn_01x05_Male" H 6200 6200 50  0000 C CNN
+F 2 "xiao-simple:PinHeader_1x05_P2.54mm_Vertical_2" H 6200 5850 50  0001 C CNN
+F 3 "~" H 6200 5850 50  0001 C CNN
+	1    6200 5850
+	1    0    0    -1  
+$EndComp
+Text GLabel 6800 5950 2    50   Input ~ 0
+S-MIN
+$Comp
+L Connector:Conn_01x03_Male J4
+U 1 1 60BA8845
+P 5150 6050
+F 0 "J4" H 5250 6400 50  0000 R CNN
+F 1 "Conn_01x03_Male" H 5550 6300 50  0000 R CNN
+F 2 "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical" H 5150 6050 50  0001 C CNN
+F 3 "~" H 5150 6050 50  0001 C CNN
+	1    5150 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 5750 6900 5750
+Wire Wire Line
+	6900 5750 6900 5450
+Text GLabel 6900 5450 1    50   Input ~ 0
+EXTRA
+Wire Wire Line
+	6400 5650 6600 5650
+Wire Wire Line
+	6600 5650 6600 5300
+Connection ~ 5600 5500
+Connection ~ 5700 5400
+Wire Wire Line
+	5600 6400 5500 6400
+Wire Wire Line
+	5700 6400 5800 6400
+Wire Wire Line
+	6400 5950 6800 5950
+Wire Wire Line
+	6400 6200 6400 6050
+Wire Wire Line
+	5350 5300 6600 5300
+Wire Wire Line
+	5350 5950 5800 5950
+Wire Wire Line
+	5800 5950 5800 6200
+Wire Wire Line
+	5800 6200 6400 6200
+$Comp
+L power:+5V #PWR06
+U 1 1 60BED0ED
+P 5600 4250
+F 0 "#PWR06" H 5600 4100 50  0001 C CNN
+F 1 "+5V" H 5615 4423 50  0000 C CNN
+F 2 "" H 5600 4250 50  0001 C CNN
+F 3 "" H 5600 4250 50  0001 C CNN
+	1    5600 4250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5600 4250 5350 4250
+Text Notes 4400 650  0    50   ~ 0
+DCDC-5V
+Text Notes 7550 650  0    50   ~ 0
+GEAR STEPPER
+Text Notes 7550 3350 0    50   ~ 0
+SELECTOR STEPPER
+Wire Notes Line
+	7450 500  7450 6500
+Wire Notes Line
+	4300 500  4300 7750
+Text Notes 4400 3350 0    50   ~ 0
+ENDSTOPS
+Wire Notes Line
+	500  3150 11200 3150
+Text Notes 550  650  0    50   ~ 0
+MCU
+Text Notes 4400 4850 0    50   ~ 0
+- ENCODER
+Text Notes 4400 4200 0    50   ~ 0
+- SERVO
+Text Notes 4400 5450 0    50   ~ 0
+- EXTRA\n  (TOOLHEAD)
+Text Notes 4400 6150 0    50   ~ 0
+- SELECTOR \n  ENDSTOP
+Text Notes 4700 7650 0    50   ~ 0
+CASE 1 (typical):\n1-2 PA7 = Extra Endstop\n4-5 PB8 = Selector Endstop\n\nCASE 2 : \n1-2 PA7 = Extra Endstop\n3-4 PB8 = Selector TMC2209 Stallguard\n\nCASE 3 : \n2-3 PA7 = Selector TMC2209 Stallguard\n4-5 PB8 = Selector Endstop
+Text Notes 8650 5850 0    50   ~ 0
+stallguard
+$Comp
+L power:VDC #PWR022
+U 1 1 60CD1FCF
+P 9850 3800
+F 0 "#PWR022" H 9850 3700 50  0001 C CNN
+F 1 "VDC" H 9865 3973 50  0000 C CNN
+F 2 "" H 9850 3800 50  0001 C CNN
+F 3 "" H 9850 3800 50  0001 C CNN
+	1    9850 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 60AD307F
+P 10550 6100
+F 0 "H2" H 10650 6146 50  0000 L CNN
+F 1 "MountingHole" H 10650 6055 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 10550 6100 50  0001 C CNN
+F 3 "~" H 10550 6100 50  0001 C CNN
+	1    10550 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 60AD3C1F
+P 10550 5850
+F 0 "H1" H 10650 5896 50  0000 L CNN
+F 1 "MountingHole" H 10650 5805 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 10550 5850 50  0001 C CNN
+F 3 "~" H 10550 5850 50  0001 C CNN
+	1    10550 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 5400 5700 6050
+Wire Wire Line
+	5600 5500 5600 6150
+Wire Wire Line
+	5350 6050 5700 6050
+Connection ~ 5700 6050
+Wire Wire Line
+	5700 6050 5700 6400
+Wire Wire Line
+	5350 6150 5600 6150
+Connection ~ 5600 6150
+Wire Wire Line
+	5600 6150 5600 6400
+Wire Wire Line
+	9900 1700 10000 1700
+Wire Wire Line
+	9550 2550 9650 2550
+Wire Wire Line
+	9650 2550 9650 2650
+Wire Wire Line
+	9550 2650 9650 2650
+Connection ~ 9650 2650
+Wire Wire Line
+	9650 2650 9650 2750
+Wire Wire Line
+	9550 1550 9900 1550
+Wire Wire Line
+	9900 1700 9900 1550
+Connection ~ 9900 1550
+Wire Wire Line
+	9900 1550 10000 1550
+Wire Wire Line
+	9550 4200 9900 4200
+Wire Wire Line
+	10000 4350 9900 4350
+Wire Wire Line
+	9900 4350 9900 4200
+Connection ~ 9900 4200
+Wire Wire Line
+	9900 4200 10000 4200
+Wire Wire Line
+	9900 4900 9900 5850
+Wire Wire Line
+	9550 5200 9650 5200
+Wire Wire Line
+	9650 5200 9650 5300
+Wire Wire Line
+	9550 5300 9650 5300
+Connection ~ 9650 5300
+Wire Wire Line
+	9650 5300 9650 5400
+Wire Wire Line
+	9550 4900 9900 4900
+Wire Wire Line
+	6400 5850 9900 5850
+NoConn ~ 8150 4150
+NoConn ~ 8150 1500
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 60B82BD5
+P 10550 6350
+F 0 "H3" H 10650 6396 50  0000 L CNN
+F 1 "MountingHole" H 10650 6305 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 10550 6350 50  0001 C CNN
+F 3 "~" H 10550 6350 50  0001 C CNN
+	1    10550 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NC_Small JP7
+U 1 1 60B6220C
+P 7700 2500
+F 0 "JP7" V 7950 2600 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 7450 2600 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 7700 2500 50  0001 C CNN
+F 3 "~" H 7700 2500 50  0001 C CNN
+	1    7700 2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Jumper_NC_Small JP8
+U 1 1 60B6E600
+P 7800 2500
+F 0 "JP8" V 7950 2400 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 7550 2400 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 7800 2500 50  0001 C CNN
+F 3 "~" H 7800 2500 50  0001 C CNN
+	1    7800 2500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8150 2200 7700 2200
+Wire Wire Line
+	7700 2200 7700 2400
+Wire Wire Line
+	8150 2300 7800 2300
+Wire Wire Line
+	7800 2300 7800 2400
+Text GLabel 7800 5450 3    50   Input ~ 0
+UART
+Wire Wire Line
+	7700 5250 7700 5350
+Wire Wire Line
+	7700 5350 7800 5350
+Wire Wire Line
+	7800 5250 7800 5350
+Wire Wire Line
+	7800 5350 7800 5450
+Connection ~ 7800 5350
+$Comp
+L Device:Jumper_NC_Small JP9
+U 1 1 60B880EF
+P 7700 5150
+F 0 "JP9" V 7950 5250 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 7450 5250 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 7700 5150 50  0001 C CNN
+F 3 "~" H 7700 5150 50  0001 C CNN
+	1    7700 5150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Jumper_NC_Small JP10
+U 1 1 60B880F5
+P 7800 5150
+F 0 "JP10" V 7950 5050 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 7550 5050 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 7800 5150 50  0001 C CNN
+F 3 "~" H 7800 5150 50  0001 C CNN
+	1    7800 5150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7700 4850 7700 5050
+Wire Wire Line
+	7800 4950 7800 5050
+Wire Wire Line
+	8150 4850 7700 4850
+Wire Wire Line
+	8150 4950 7800 4950
+$EndSCHEMATC
