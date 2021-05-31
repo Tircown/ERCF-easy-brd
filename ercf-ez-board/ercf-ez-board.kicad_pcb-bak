@@ -178,7 +178,7 @@
     (path /60ACCCFB)
     (attr smd)
     (fp_text reference U1 (at 9.652 -2.54 180) (layer F.SilkS)
-      (effects (font (size 0.889 0.889) (thickness 0.1016)))
+      (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value SeeeduinoXIAO (at -0.0254 7.32282 90) (layer F.SilkS) hide
       (effects (font (size 0.6096 0.6096) (thickness 0.0762)))

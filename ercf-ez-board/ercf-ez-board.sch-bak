@@ -434,7 +434,7 @@ U 1 1 60B2FB7C
 P 5500 1150
 F 0 "J5" V 5750 1150 50  0000 R CNN
 F 1 "Screw_Terminal_01x02" V 5650 1500 50  0000 R CNN
-F 2 "xiao-simple:TerminalBlock_bornier-2_P5.08mm_2" H 5500 1150 50  0001 C CNN
+F 2 "ercf-ez-board:TerminalBlock_bornier-2_P5.08mm_2" H 5500 1150 50  0001 C CNN
 F 3 "~" H 5500 1150 50  0001 C CNN
 	1    5500 1150
 	0    -1   -1   0   
@@ -644,7 +644,7 @@ U 1 1 60B9F41F
 P 6200 5850
 F 0 "J6" H 6200 6300 50  0000 C CNN
 F 1 "Conn_01x05_Male" H 6200 6200 50  0000 C CNN
-F 2 "xiao-simple:PinHeader_1x05_P2.54mm_Vertical_2" H 6200 5850 50  0001 C CNN
+F 2 "ercf-ez-board:PinHeader_1x05_P2.54mm_Vertical_2" H 6200 5850 50  0001 C CNN
 F 3 "~" H 6200 5850 50  0001 C CNN
 	1    6200 5850
 	1    0    0    -1  
@@ -728,7 +728,7 @@ Text Notes 4400 5450 0    50   ~ 0
 Text Notes 4400 6150 0    50   ~ 0
 - SELECTOR \n  ENDSTOP
 Text Notes 4700 7650 0    50   ~ 0
-CASE 1 (typical):\n1-2 PA7 = Extra Endstop\n4-5 PB8 = Selector Endstop\n\nCASE 2 : \n1-2 PA7 = Extra Endstop\n3-4 PB8 = Selector TMC2209 Stallguard\n\nCASE 3 : \n2-3 PA7 = Selector TMC2209 Stallguard\n4-5 PB8 = Selector Endstop
+CASE 1 (typical):\n1-2 PA7 = Extra Endstop\n4-5 PB9 = Selector Endstop\n\nCASE 2 : \n1-2 PA7 = Extra Endstop\n3-4 PB9 = Selector TMC2209 Stallguard\n\nCASE 3 : \n2-3 PA7 = Selector TMC2209 Stallguard\n4-5 PB9 = Selector Endstop
 Text Notes 8650 5850 0    50   ~ 0
 stallguard
 $Comp

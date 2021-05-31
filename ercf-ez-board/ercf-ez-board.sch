@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "ERCF EZ BOARD"
-Date "29/05/2021"
+Date "31/05/2021"
 Rev "v1.0"
 Comp "The ERCF fanclub"
 Comment1 "by Tircown"
@@ -728,7 +728,7 @@ Text Notes 4400 5450 0    50   ~ 0
 Text Notes 4400 6150 0    50   ~ 0
 - SELECTOR \n  ENDSTOP
 Text Notes 4700 7650 0    50   ~ 0
-CASE 1 (typical):\n1-2 PA7 = Extra Endstop\n4-5 PB8 = Selector Endstop\n\nCASE 2 : \n1-2 PA7 = Extra Endstop\n3-4 PB8 = Selector TMC2209 Stallguard\n\nCASE 3 : \n2-3 PA7 = Selector TMC2209 Stallguard\n4-5 PB8 = Selector Endstop
+CASE 1 (typical):\n1-2 PA7 = Extra Endstop\n4-5 PB9 = Selector Endstop\n\nCASE 2 : \n1-2 PA7 = Extra Endstop\n3-4 PB9 = Selector TMC2209 Stallguard\n\nCASE 3 : \n2-3 PA7 = Selector TMC2209 Stallguard\n4-5 PB9 = Selector Endstop
 Text Notes 8650 5850 0    50   ~ 0
 stallguard
 $Comp
