@@ -16,7 +16,7 @@ capacitor 100uF 25V | C3, C4
 2P Header socket P=2.54 | *1x for U4*
 5P Header pin P=2.54 | J6
 7P Header socket female P=2.54 | *(optionnal) 2x for Seeeduino XIAO*
-Seeduino XIAO | U1
+Seeeduino XIAO | U1
 Voltage regulator L7805CP | U2
 SilentStepStick TMC220X | U3, U4
 Jumper P=2.54 | *2x for J6*
