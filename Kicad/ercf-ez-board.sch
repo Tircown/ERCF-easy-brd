@@ -839,7 +839,7 @@ U 1 1 60B6220C
 P 7700 2500
 F 0 "JP7" V 7950 2600 50  0000 C CNN
 F 1 "Jumper_NC_Small" H 7450 2600 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 7700 2500 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 7700 2500 50  0001 C CNN
 F 3 "~" H 7700 2500 50  0001 C CNN
 	1    7700 2500
 	0    -1   -1   0   
@@ -880,7 +880,7 @@ U 1 1 60B880EF
 P 7700 5150
 F 0 "JP9" V 7950 5250 50  0000 C CNN
 F 1 "Jumper_NC_Small" H 7450 5250 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 7700 5150 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 7700 5150 50  0001 C CNN
 F 3 "~" H 7700 5150 50  0001 C CNN
 	1    7700 5150
 	0    -1   -1   0   
