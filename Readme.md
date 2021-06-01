@@ -5,10 +5,10 @@
 ## BOM
 Component | Position
 ------------ | -------------
-resistor 10K | R1, R2, R3, R4
-ceramic capacitor 0.33uF 25V | C1
-ceramic capacitor 0.1uF 25V | C2
-capacitor 100uF 25V | C3, C4
+Resistor 10K | R1, R2, R3, R4
+Capacitor ceramic 0.33uF 25V | C1
+Capacitor ceramic 0.1uF 25V | C2
+Capacitor 100uF 25V | C3, C4
 2P Screw terminal P=5.08 | J5
 3P JST-XH male P=2.54 | J1, J2, J3, J4
 4P JST-XH male P=2.54 | J6, J7
@@ -36,7 +36,8 @@ cd ~/klipper
 make menuconfig
 ```
 ![Menuconfig instructions](/images/flashing.jpg)
-```make clean
+```
+make clean
 make
 ```
 * Flashing the Seeeduino XIAO
@@ -47,7 +48,8 @@ Use tweezers or short lines to short the RST pins in the diagram twice. The oran
 sudo /usr/local/bin/bossac -i -d -p /dev/ttyACM1 -e -w -v -R --offset=0x2000 out/klipper.bin
 ```
 
-More informations on how to reset for flashing: https://wiki.seeedstudio.com/Seeeduino-XIAO/#enter-bootloader-mode
+More informations on how to reset for flashing: 
+https://wiki.seeedstudio.com/Seeeduino-XIAO/#enter-bootloader-mode
 
 ## Klipper configuration
 See [ercf_hardware.cfg](ercf_hardware.cfg)
