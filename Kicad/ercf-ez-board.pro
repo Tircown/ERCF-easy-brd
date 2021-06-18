@@ -1,4 +1,4 @@
-update=29/05/2021 21:15:01
+update=02/06/2021 16:38:04
 version=1
 last_client=kicad
 [general]
@@ -248,9 +248,20 @@ dPairWidth=0.2
 dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/1]
-Name=POWER
+Name=MOT
 Clearance=0.2
-TrackWidth=0.6
+TrackWidth=1
+ViaDiameter=1
+ViaDrill=0.6
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.2
+dPairGap=0.25
+dPairViaGap=0.25
+[pcbnew/Netclasses/2]
+Name=PWR
+Clearance=0.2
+TrackWidth=0.8
 ViaDiameter=1
 ViaDrill=0.6
 uViaDiameter=0.3

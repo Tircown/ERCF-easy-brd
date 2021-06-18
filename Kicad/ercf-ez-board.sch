@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "ERCF EZ BOARD"
-Date "31/05/2021"
-Rev "v1.0"
+Date "02/06/2021"
+Rev "v1.1"
 Comp "The ERCF fanclub"
 Comment1 "by Tircown"
 Comment2 ""
@@ -484,17 +484,6 @@ F 3 "" H 9850 1150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR01
-U 1 1 60B3D854
-P 3150 1350
-F 0 "#PWR01" H 3150 1200 50  0001 C CNN
-F 1 "VCC" V 3165 1478 50  0000 L CNN
-F 2 "" H 3150 1350 50  0001 C CNN
-F 3 "" H 3150 1350 50  0001 C CNN
-	1    3150 1350
-	0    1    1    0   
-$EndComp
-$Comp
 L power:+3V3 #PWR03
 U 1 1 60B3E4C7
 P 3150 1650
@@ -606,17 +595,6 @@ Text GLabel 3150 2100 2    50   Input ~ 0
 EXTRA
 Text GLabel 3150 2250 2    50   Input ~ 0
 S-MIN
-$Comp
-L power:VCC #PWR04
-U 1 1 60B695DA
-P 5500 6400
-F 0 "#PWR04" H 5500 6250 50  0001 C CNN
-F 1 "VCC" V 5515 6527 50  0000 L CNN
-F 2 "" H 5500 6400 50  0001 C CNN
-F 3 "" H 5500 6400 50  0001 C CNN
-	1    5500 6400
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	5350 4700 5800 4700
 Wire Wire Line
@@ -833,28 +811,6 @@ F 3 "~" H 10550 6350 50  0001 C CNN
 	1    10550 6350
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:Jumper_NC_Small JP7
-U 1 1 60B6220C
-P 7700 2500
-F 0 "JP7" V 7950 2600 50  0000 C CNN
-F 1 "Jumper_NC_Small" H 7450 2600 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 7700 2500 50  0001 C CNN
-F 3 "~" H 7700 2500 50  0001 C CNN
-	1    7700 2500
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:Jumper_NC_Small JP8
-U 1 1 60B6E600
-P 7800 2500
-F 0 "JP8" V 7950 2400 50  0000 C CNN
-F 1 "Jumper_NC_Small" H 7550 2400 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 7800 2500 50  0001 C CNN
-F 3 "~" H 7800 2500 50  0001 C CNN
-	1    7800 2500
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	8150 2200 7700 2200
 Wire Wire Line
@@ -874,28 +830,6 @@ Wire Wire Line
 Wire Wire Line
 	7800 5350 7800 5450
 Connection ~ 7800 5350
-$Comp
-L Device:Jumper_NC_Small JP9
-U 1 1 60B880EF
-P 7700 5150
-F 0 "JP9" V 7950 5250 50  0000 C CNN
-F 1 "Jumper_NC_Small" H 7450 5250 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 7700 5150 50  0001 C CNN
-F 3 "~" H 7700 5150 50  0001 C CNN
-	1    7700 5150
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:Jumper_NC_Small JP10
-U 1 1 60B880F5
-P 7800 5150
-F 0 "JP10" V 7950 5050 50  0000 C CNN
-F 1 "Jumper_NC_Small" H 7550 5050 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 7800 5150 50  0001 C CNN
-F 3 "~" H 7800 5150 50  0001 C CNN
-	1    7800 5150
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	7700 4850 7700 5050
 Wire Wire Line
@@ -904,4 +838,60 @@ Wire Wire Line
 	8150 4850 7700 4850
 Wire Wire Line
 	8150 4950 7800 4950
+$Comp
+L power:+3V3 #PWR0101
+U 1 1 60B7B4E3
+P 5500 6400
+F 0 "#PWR0101" H 5500 6250 50  0001 C CNN
+F 1 "+3V3" V 5515 6528 50  0000 L CNN
+F 2 "" H 5500 6400 50  0001 C CNN
+F 3 "" H 5500 6400 50  0001 C CNN
+	1    5500 6400
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 3150 1350
+$Comp
+L Device:Jumper_NC_Small JP10
+U 1 1 60B880EF
+P 7800 5150
+F 0 "JP10" V 7950 5000 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 7550 5050 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 7800 5150 50  0001 C CNN
+F 3 "~" H 7800 5150 50  0001 C CNN
+	1    7800 5150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Jumper_NO_Small JP9
+U 1 1 60B8EB85
+P 7700 5150
+F 0 "JP9" V 7450 4950 50  0000 L CNN
+F 1 "Jumper_NO_Small" H 7950 5050 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 7700 5150 50  0001 C CNN
+F 3 "~" H 7700 5150 50  0001 C CNN
+	1    7700 5150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Jumper_NC_Small JP8
+U 1 1 60B6220C
+P 7800 2500
+F 0 "JP8" V 7950 2400 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 7550 2400 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 7800 2500 50  0001 C CNN
+F 3 "~" H 7800 2500 50  0001 C CNN
+	1    7800 2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Jumper_NO_Small JP7
+U 1 1 60B87691
+P 7700 2500
+F 0 "JP7" V 7500 2300 50  0000 L CNN
+F 1 "Jumper_NO_Small" H 7950 2400 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 7700 2500 50  0001 C CNN
+F 3 "~" H 7700 2500 50  0001 C CNN
+	1    7700 2500
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
