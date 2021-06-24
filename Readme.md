@@ -1,6 +1,6 @@
-# ERCF EZ BOARD
+# ERCF EASY BRD
 
-![ERCF front picture](/images/ercf-ez-board_front.jpg)
+![ERCF front picture](/images/ercf-easy-brd_front.jpg)
 
 ## BOM
 Component | Position
@@ -58,5 +58,5 @@ See [ercf_hardware.cfg](ercf_hardware.cfg)
 ![ERCF dimensions picture](/images/dimensions.jpg)
 
 ## More pictures
-![ERCF back picture](/images/ercf-ez-board_back.jpg)
-![ERCF front picture](/images/ercf-ez-board_front_2.jpg)
+![ERCF back picture](/images/ercf-easy-brd_back.jpg)
+![ERCF front picture](/images/ercf-easy-brd_front_2.jpg)

@@ -46,7 +46,7 @@
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
   )
-  (model "${KIPRJMOD}/ercf-ez-board.pretty/packages3d/BTT TMC2209-V1.2.STEP"
+  (model "${KIPRJMOD}/ercf-easy-brd.pretty/packages3d/BTT TMC2209-V1.2.STEP"
     (offset (xyz 0 0 9.4))
     (scale (xyz 1 1 1))
     (rotate (xyz -90 0 180))

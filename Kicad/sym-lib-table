@@ -1,3 +1,3 @@
 (sym_lib_table
-  (lib (name ercf-ez-board)(type Legacy)(uri ${KIPRJMOD}/ercf-ez-board.lib)(options "")(descr ""))
+  (lib (name ercf-easy-brd)(type Legacy)(uri ${KIPRJMOD}/ercf-easy-brd.lib)(options "")(descr ""))
 )

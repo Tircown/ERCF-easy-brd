@@ -35,12 +35,12 @@
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
   )
-  (model ${KIPRJMOD}/ercf-ez-board.pretty/packages3d/Jumper.step
+  (model ${KIPRJMOD}/ercf-easy-brd.pretty/packages3d/Jumper.step
     (offset (xyz 0 -1.27 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 90))
   )
-  (model ${KIPRJMOD}/ercf-ez-board.pretty/packages3d/Jumper.step
+  (model ${KIPRJMOD}/ercf-easy-brd.pretty/packages3d/Jumper.step
     (offset (xyz 0 -8.9 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 90))

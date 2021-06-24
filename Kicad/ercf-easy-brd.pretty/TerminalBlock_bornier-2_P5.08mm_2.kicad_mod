@@ -31,7 +31,7 @@
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
   )
-  (model "${KIPRJMOD}/ercf-ez-board.pretty/packages3d/Screw Terminal Block 5mm 2-way.step"
+  (model "${KIPRJMOD}/ercf-easy-brd.pretty/packages3d/Screw Terminal Block 5mm 2-way.step"
     (offset (xyz 2.5 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz -90 0 0))
