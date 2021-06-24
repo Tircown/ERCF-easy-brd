@@ -4,8 +4,8 @@
 
 **Be careful not to invert polarity in the screw terminal or it may damage the board and even more.**
 
-**Do not use the servo connector as an input or do it at your own risk.**
-**Voltage input connected to general I/O pins may cause chip damage if it' higher than 3.3V .**
+**Do not use the servo connector as an input or do it at your own risk.  
+Voltage input connected to general I/O pins may cause chip damage if it' higher than 3.3V .**
 
 ## BOM
 Component | Position
@@ -53,17 +53,17 @@ Use tweezers or short lines to short the RST pins in the diagram twice. The oran
 sudo /usr/local/bin/bossac -i -d -p /dev/ttyACM1 -e -w -v -R --offset=0x2000 out/klipper.bin
 ```
 
-More informations on how to reset for flashing: 
+More informations on how to reset for flashing:  
 https://wiki.seeedstudio.com/Seeeduino-XIAO/#enter-bootloader-mode
 
 ## Klipper configuration
 See [ercf_hardware.cfg](ercf_hardware.cfg)
 
 ## Get the PCB Board
-If you want to support my work: https://www.pcbway.com/project/shareproject/ERCF_EASY_BRD.html 
+If you want to support my work: https://www.pcbway.com/project/shareproject/ERCF_EASY_BRD.html  
 *note: default setting is "HASL lead free" but if it doesn't matter to you, just change this option to get more affordable boards.*
 
-Or just download the Gerber files and upload it to your the manufacturer of your choice.
+Or just download the Gerber files and upload it to the manufacturer of your choice.
 
 ## Dimensions
 ![ERCF dimensions picture](/images/dimensions.jpg)
