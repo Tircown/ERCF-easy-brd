@@ -4,7 +4,8 @@
 
 **Be careful not to invert polarity in the screw terminal or it may damage the board and even more.**
 
-**Do not use the servo connector as an input or do it at your own risk. Voltage input connected to general I/O pins may cause chip damage if it' higher than 3.3V .**
+**Do not use the servo connector as an input or do it at your own risk.
+Voltage input connected to general I/O pins may cause chip damage if it' higher than 3.3V .**
 
 ## BOM
 Component | Position
@@ -20,8 +21,7 @@ Capacitor 100uF 25V | C3, C4
 2P Header socket P=2.54 | *1x for U4*
 5P Header pin P=2.54 | J6
 7P Header socket female P=2.54 | *(optionnal) 2x for Seeeduino XIAO*
-Seeeduino XIAO 
-or Adafruit QT Py (same footprint & pinout)| U1
+Seeeduino XIAO or Adafruit QT Py (same footprint & pinout)| U1
 Voltage regulator L7805CP | U2
 SilentStepStick TMC220X | U3, U4
 Jumper P=2.54 | *2x for J6*
