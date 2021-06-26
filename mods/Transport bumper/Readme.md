@@ -1,5 +1,5 @@
 # ERCF EASY BRD MOD : Transport bumper
-Author: Tircown
+Author: Tircown\
 [X] Tested
 
 Protective bumper to send a complete ERCF board.\

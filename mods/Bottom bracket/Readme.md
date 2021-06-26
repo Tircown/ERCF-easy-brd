@@ -1,5 +1,5 @@
 # ERCF EASY BRD MOD : Bottom bracket
-Author: Tircown
+Author: Tircown\
 [X] Tested
 
 Low profile bracket.
