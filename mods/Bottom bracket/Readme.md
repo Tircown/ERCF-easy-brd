@@ -1,6 +1,6 @@
 # ERCF EASY BRD MOD : Bottom bracket
 Author: Tircown\
-[X] Tested
+- [x] Tested
 
 Low profile bracket.
 Place the PCB board as low as possible while being flush with the bottom of the 2020 aluminium extrusion.
