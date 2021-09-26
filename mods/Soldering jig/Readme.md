@@ -16,8 +16,8 @@ Thank you to Robertt for the request, tests and feedbacks (and photos).
 4. Ready to solder.
 5. _The others components still need to be soldered afterward._
 
-![Preload](Images/image1.png)
-![Board](Images/image0.png)
+![Preload](Images/image1.jpg)
+![Board](Images/image0.jpg)
 
 ## Changelog
 09-26-2021 | Initial version
