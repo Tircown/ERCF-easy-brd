@@ -25,6 +25,9 @@ Seeeduino XIAO or Adafruit QT Py (same footprint & pinout)| U1
 Voltage regulator L7805CP | U2
 SilentStepStick TMC220X | U3, U4
 Jumper P=2.54 | *2x for J6*
+Heatsink for TO-220 | *(recommended) 1x for the L7805CP (1)*
+
+*(1) You will need to bend a fin and remove the pin of the TO-220 heatsink. Make sure the PCB has no bare traces underneath or apply an insolator before (i.e. piece of chatertone).*
 
 ## Configure the MCU - Seeeduino XIAO
 * Install bossac (version ≥1.8)
