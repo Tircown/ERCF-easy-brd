@@ -23,7 +23,7 @@ Capacitor 100uF 25V | C3, C4
 7P Header socket female P=2.54 | *(optionnal) 2x for Seeeduino XIAO*
 Seeeduino XIAO or Adafruit QT Py (same footprint & pinout)| U1
 Voltage regulator L7805CP | U2
-SilentStepStick TMC220X | U3, U4
+SilentStepStick TMC2209 | U3, U4
 Jumper P=2.54 | *2x for J6*
 Heatsink for TO-220 | *(recommended) 1x for the L7805CP (1)*
 
