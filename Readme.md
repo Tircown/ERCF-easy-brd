@@ -60,7 +60,7 @@ More informations on how to reset for flashing:\
 https://wiki.seeedstudio.com/Seeeduino-XIAO/#enter-bootloader-mode
 
 ## Klipper configuration
-See [ercf_hardware.cfg](config/Seeeduino XIAO - SAMD21G18/ercf_hardware.cfg) for the Seeeduino XIAO (most common solution)
+See [ercf_hardware.cfg](config/Seeeduino%20XIAO%20-%20SAMD21G18/ercf_hardware.cfg) for the Seeeduino XIAO (most common solution)
 Other microcontrollers configurations are available in config/
 
 ## Get the PCB Board
